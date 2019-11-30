@@ -191,13 +191,13 @@
 	</div><!-- <img src="main.jpeg"> -->
 
 	<div class="container">
-		<img alt="Main Pic" class="main-pic" src="resources/main.jpeg">
+		<img alt="Main Pic" class="main-pic" src="resources/css/main.jpeg">
 		<div class="main-text-1">
 			Welcome to Sarah J. Ortiz's<br>
 			Official Website!
 
 			<!-- BIOGRAPHY -->
-		</div><img alt="bio-pic" class="bio-pic" src="resources/bio-pic.jpeg" width="50%">
+		</div><img alt="bio-pic" class="bio-pic" src="resources/css/bio-pic.jpeg" width="50%">
 		<div class="bio">
 			<h3 class="bio-header">Biography</h3>
 			<p class="bio-text" id="bio">Sarah J Ortiz is an up and coming artist born and raised in Brooklyn, NY. Sarah is multi-talented and is currently versed in many talents such as acting, improv comedy, singing, modeling, dancing and tv host. Sarah can speak in many accents and dialects such as British, New York, Spanish and Southern. She has training from Monologue Method, The Actors Project NYC, TBG Arts Center for Film & TV, and Mark Stolzenberg Actors Studio.</p>
@@ -254,7 +254,14 @@
 		</div>
 
 		<!-- Gallery -->
-		<p class="gallery-header" id="gallery">Gallery</p><img alt="Pic 1" class="mySlides" src="resources/pic-1.jpeg"> <img alt="Pic 2" class="mySlides" src="resources/pic-2.jpeg"> <img alt="Pic 3" class="mySlides" src="resources/pic-3.jpeg"> <img alt="Pic 4" class="mySlides" src="resources/pic-4.jpeg"> <img alt="Pic 5" class="mySlides" src="resources/pic-5.jpeg"> <img alt="Pic 6" class="mySlides" src="resources/pic-6.jpeg">
+		<p class="gallery-header" id="gallery">Gallery</p>
+		<img alt="Pic 1" class="mySlides" src="resources/css/pic-1.jpeg">
+		<img alt="Pic 2" class="mySlides" src="resources/css/pic-2.jpeg">
+		<img alt="Pic 3" class="mySlides" src="resources/css/pic-3.jpeg">
+		<img alt="Pic 4" class="mySlides" src="resources/css/pic-4.jpeg">
+		<img alt="Pic 5" class="mySlides" src="resources/css/pic-5.jpeg">
+		<img alt="Pic 6" class="mySlides" src="resources/css/pic-6.jpeg">
+
 		<div class="insta-pics">
 			<blockquote class="instagram-media" data-instgrm-captioned="" data-instgrm-permalink="https://www.instagram.com/p/B30R36ZgH7r/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
 				<div style="padding:16px;">
@@ -767,20 +774,20 @@
 			<!-- FOOTPRINT Network -->
       <div class="fp" id="fp-app">
           <a href="https://www.footprint.tv/">
-          <img class="fp-icon" src="resources/footprint.png"/>
+          <img class="fp-icon" src="resources/icons/footprint.png"/>
           <div class="fp-link">
           <a href="https://www.footprint.tv/" style="color:white;">FOOTPRINT Network</a>
          </div>
       <div class="droid">
         <a href="https://play.google.com/store/apps/details?id=com.endavomedia.footprinttv.production&hl=en_US">
-         <img class="android" src="resources/android.png"/></a>
+         <img class="android" src="resources/icons/android.png"/></a>
          <div class="droid-link">
          <a href="https://play.google.com/store/apps/details?id=com.endavomedia.footprinttv.production&hl=en_US" style="color:white;"> Download FOOTPRINT Network App for Android </a>
          </div>
       </div>
       <div class="apple">
         <a href="https://apps.apple.com/us/app/footprint-network/id1228629418">
-         <img class="apple-pic" src="resources/apple.png"/>
+         <img class="apple-pic" src="resources/icons/apple.png"/>
          </a>
          <div class="apple-link">
          <a href="https://apps.apple.com/us/app/footprint-network/id1228629418" style="color:white;"> Download FOOTPRINT Network App for iPhone </a>
@@ -802,29 +809,7 @@
 		</div>
 
 	<!-- javascript -->
-		<script>
-		  function myFunction() {
-		   var x = document.getElementById("myTopnav");
-		   if (x.className === "topnav") {
-		     x.className += " responsive";
-		   } else {
-		     x.className = "topnav";
-		   }
-		  }
-		  var slideIndex = 0;
-		carousel();
-		function carousel() {
-		var i;
-		var x = document.getElementsByClassName("mySlides");
-		for (i = 0; i < x.length; i++) {
-		  x[i].style.display = "none";
-		}
-		slideIndex++;
-		if (slideIndex > x.length) {slideIndex = 1}
-		x[slideIndex-1].style.display = "block";
-		setTimeout(carousel, 2000); // Change image every 2 seconds
-		}
-		</script>
+  <script src="resources/js/script.js"></script>
 	</div>
 </body>
 </html>
